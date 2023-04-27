@@ -1,0 +1,34 @@
+<section class="flex flex-wrap">
+  <div
+    *ngFor="let project of projects"
+    class="flex flex-col justify-between w-[30%] mt-3 mr-3 mb-3 bg-[#1F2937] border-b border-gray-800 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+  >
+    <!-- <a href="#">
+      <img class="rounded-t-lg" src="https://picsum.photos" alt="" />
+  </a> -->
+    <div class="p-5">
+      <a href="#">
+        <h5
+          class="mb-2 text-2xl font-manrope-bold tracking-tight text-white dark:text-white"
+        >
+          {{ project.name }}
+        </h5>
+      </a>
+      <p
+        class="mb-3 font-normal text-white font-nunito-regular dark:text-gray-400"
+      >
+        {{ project?.description }}
+      </p>
+    </div>
+    <a
+      href="{{ project.url }}"
+      class="inline-flex justify-center items-center m-2 text-sm  text-center text-white"
+    >
+      <button
+        class="inline-flex justify-end text-gray-700 bg-white border-0 py-2 px-6 focus:outline-none  rounded text-lg"
+      >
+        Visit Site
+      </button>
+    </a>
+  </div>
+</section>

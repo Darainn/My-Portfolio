@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+
+html,
+body {
+  background-color: #111827;
+  /* width : min-content; */
+}
+
+
+
+
+@layer base {
+  @font-face {
+    font-family: "Nunito-Regular";
+    src: url("./assets/fonts/Nunito-Regular.ttf");
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Nunito-Medium";
+    src: url("./assets/fonts/Nunito-Medium.ttf");
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Nunito-Bold";
+    src: url("./assets/fonts/Nunito-ExtraBold.ttf");
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Manrope-Regular";
+    src: url("./assets/fonts/Manrope-Regular.ttf");
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Manrope-Medium";
+    src: url("./assets/fonts/Manrope-Medium.ttf");
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Manrope-Bold";
+    src: url("./assets/fonts/Manrope-Bold.ttf");
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Tajawal-Regular";
+    src: url("./assets/fonts/Tajawal-Regular.ttf");
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Tajawal-Medium";
+    src: url("./assets/fonts/Tajawal-Medium.ttf");
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Tajawal-Bold";
+    src: url("./assets/fonts/Tajawal-Bold.ttf");
+    font-style: normal;
+  }
+}
+
