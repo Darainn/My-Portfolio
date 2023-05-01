@@ -10,6 +10,8 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { MainSectionComponent } from './components/main-section/main-section.component';
 import { FindMeComponent } from './components/find-me/find-me.component';
 import { ProjectCardComponent } from './components/projects/project-card/project-card.component';
+import { BannerComponent } from './components/banner/banner.component';
+import { TechnologyCardsComponent } from './components/experience/technology-cards/technology-cards.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ProjectCardComponent } from './components/projects/project-card/project
     ExperienceComponent,
     MainSectionComponent,
     FindMeComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    BannerComponent,
+    TechnologyCardsComponent
   ],
   imports: [
     BrowserModule,

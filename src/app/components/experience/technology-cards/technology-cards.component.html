@@ -1,0 +1,20 @@
+<section class="flex justify-center flex-wrap">
+  <div *ngFor="let technology of technologies" class="flip-card mt-3 mr-3 mb-3">
+    <div class="flip-card-inner">
+      <div
+        class="flip-card-front justify-center flex items-center bg-[#1F2937] border-b border-gray-800 rounded-lg shadow"
+      >
+        <img
+          src="{{ technology.url }}"
+          alt="Avatar"
+          class="h-[110px] w-[110px]"
+        />
+      </div>
+      <div
+        class="flip-card-back justify-center flex items-center bg-[#1F2937] border-b border-gray-800 rounded-lg shadow"
+      >
+        <h1 class="font-nunito-medium text-base">{{ technology.name }}</h1>
+      </div>
+    </div>
+  </div>
+</section>
