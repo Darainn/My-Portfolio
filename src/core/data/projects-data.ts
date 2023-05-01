@@ -92,3 +92,34 @@ export const frontEndTechs = [
     url: "../../assets/images/bootstrap-icon.svg",
   },
 ];
+
+export const testingTechs = [
+  {
+    name: "Appium",
+    url: "../../assets/images/appium.svg",
+  },
+  {
+    name: "Flutter Driver",
+    url: "../../assets/images/flutter-logo.svg",
+  },
+
+  {
+    name: "Mocha",
+    url: "../../assets/images/mocha.svg",
+  },
+]
+export const otherLang = [
+  {
+    name: "Python",
+    url: "../../assets/images/python-5.svg",
+  },
+  {
+    name: "C++",
+    url: "../../assets/images/c--4.svg",
+  },
+
+  {
+    name: "C#",
+    url: "../../assets/images/c.svg",
+  },
+]

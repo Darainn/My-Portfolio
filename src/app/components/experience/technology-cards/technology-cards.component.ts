@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { frontEndTechs } from 'src/core/data/projects-data';
+import { Component , Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-technology-cards',
@@ -7,5 +7,5 @@ import { frontEndTechs } from 'src/core/data/projects-data';
   styleUrls: ['./technology-cards.component.scss']
 })
 export class TechnologyCardsComponent {
-  technologies = frontEndTechs
+  @Input() techArray : any
 }

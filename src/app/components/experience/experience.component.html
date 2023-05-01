@@ -1,8 +1,6 @@
 <section class="text-gray-600 body-font">
   <div class="container mx-auto px-5 md:flex-row items-center">
-    <div
-      class="lg:flex-grow md:w-1/2 flex flex-col items-start text-left"
-    >
+    <div class="lg:flex-grow md:w-1/2 flex flex-col items-start text-left">
       <h1 class="font-manrope-bold sm:text-4xl text-3xl mb-7 text-white">
         Experience 📣
       </h1>
@@ -15,26 +13,24 @@
         Javascript using Angular, React JS, React Native, and Next and more, I
         have developed and worked on multiple applications that have been used
         by thousands of users worldwide. 🚀🚀
-        <br />
-        <br />
-        <b>My overall Front-end development skills are</b>
-        <br />
-       <app-technology-cards></app-technology-cards>
-
-        <br />
-        <br />
-
-        <b>Automation skills 💻</b>
-
-        <br />
-        Appium, Flutter Driver,Mocha 🪲
-        <br />
-        <br />
-        <b>Other skills 💻</b>
-
-        <br />
-        Python, C++ , C Sharp and more 🚀
       </p>
+
+      <b class="text-primaryGray-200 font-nunito-bold text-lg leading-relaxed">My overall Front-end development skills are</b>
+
+      <div class="m-6">
+        <app-technology-cards [techArray]="frontEnd"></app-technology-cards>
+      </div>
+
+      <b class="text-primaryGray-200 font-nunito-bold text-lg leading-relaxed">Automation skills </b>
+
+      <div class="m-6">
+        <app-technology-cards [techArray]="testingTech"></app-technology-cards>
+      </div>
+
+      <b class="text-primaryGray-200 font-nunito-bold text-lg leading-relaxed">Other skills </b>
+      <div class="m-6">
+        <app-technology-cards [techArray]="other"></app-technology-cards>
+      </div>
     </div>
   </div>
 </section>
