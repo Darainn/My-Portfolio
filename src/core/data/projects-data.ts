@@ -4,32 +4,37 @@ export const projectsData = [
     description:
       "We’re here to help our clients join the dots when it comes to corporate communications. From planning, through to execution, publishing and review, we help maximise the strategic impact of your comms function. Our offer—simple, effective, engaging communications that create real value.",
     url: "https://app.icplan.com/",
+    image: '../../assets/images/Logo-Blue-1-1.webp'
   },
 
-  {
-    name: "Homeyee Web",
-    description:
-      "Whatever your budget, Homyee application makes it easy for you to rent real estate units at the best prices. We put in your hands many and varied choices that suit your needs.",
-    url: "https://homeyyee.com/",
-  },
+  // {
+  //   name: "Homeyee Web",
+  //   description:
+  //     "Whatever your budget, Homyee application makes it easy for you to rent real estate units at the best prices. We put in your hands many and varied choices that suit your needs.",
+  //   url: "https://homeyyee.com/",
+  //   image: '../../assets/images/layer-2.5052b13f.png'
+  // },
 
   {
     name: "Admin Portals",
     description:
       "Estenarh specializes in a wide range of fields: stress, anxiety, tension, fears, depression, children's problems, adolescent problems, obsessive-compulsive disorder, learning delay, gender dysphoria, sleep disturbance, mood disorder, family and marriage issues, divorce, post-separation crises and others",
     url: "https://admin.estenarh.com/login",
+    image: '../../assets/images/estenarh.png'
   },
   {
     name: "Moya App",
     description:
       "For pure and healthy drinking water MoyaApp is the first Saudi platform that connects water and beverage consumers and their requirements with the majority of distributors and suppliers in the Kingdom.",
     url: "https://dev-web.moyaapp.com/home",
+    image: '../../assets/images/moya.png'
   },
   {
     name: "Homeyee App",
     description:
       "Whatever your budget, Homyee application makes it easy for you to rent real estate units at the best prices. We put in your hands many and varied choices that suit your needs.",
     url: "https://apps.apple.com/us/app/homeyyee/id1620523214",
+    image: '../../assets/images/layer-2.5052b13f.png'
   },
 ];
 
@@ -122,4 +127,37 @@ export const otherLang = [
     name: "C#",
     url: "../../assets/images/c.svg",
   },
+]
+export const socials = [
+  {
+    name: "Github",
+    url: "../../assets/images/github-icon-1.svg",
+    link : "https://github.com/Darainn"
+  },
+  {
+    name: "Stackoverflow",
+    url: "../../assets/images/stack-overflow.svg",
+    link : "https://stackoverflow.com/users/13954106/darain-mukarram"
+  },
+
+  {
+    name: "Facebook",
+    url: "../../assets/images/facebook-3-2.svg",
+    link: "https://www.facebook.com/mohammad.darain",
+  },
+  {
+    name: "LinkedIn",
+    url: "../../assets/images/linkedin-icon-2.svg",
+    link : "https://www.linkedin.com/in/darain-mukarram-719394193/",
+  },
+  {
+    name: "Twitter",
+    url: "../../assets/images/twitter-6.svg",
+    link  : "https://twitter.com/syed_darainn",
+  },
+
+  // {
+  //   name: "Instagram",
+  //   url: "../../assets/images/instagram-2016-5.svg",
+  // },
 ]

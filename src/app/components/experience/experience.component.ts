@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, ElementRef, ViewChild } from "@angular/core";
 import {
   frontEndTechs,
   otherLang,
@@ -14,4 +14,8 @@ export class ExperienceComponent {
   frontEnd = frontEndTechs;
   testingTech = testingTechs;
   other = otherLang;
+
+  @ViewChild("experienceSection") experienceSectionRef!: ElementRef;
+
+
 }

@@ -1,0 +1,15 @@
+
+@media screen and (max-width: 768px) {
+  .container > div > img  {
+    width: 325px;
+    height: 325px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container > div > img  {
+    width:200px;
+    height:200px;
+  }
+}
+

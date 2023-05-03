@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { projectsData } from 'src/core/data/projects-data';
 
 @Component({
@@ -8,4 +8,8 @@ import { projectsData } from 'src/core/data/projects-data';
 })
 export class ProjectsComponent {
   projectsData = projectsData;
+
+  @ViewChild("projectsSection") projectSectionRef!: ElementRef;
+
+
 }

@@ -12,6 +12,7 @@ import { FindMeComponent } from './components/find-me/find-me.component';
 import { ProjectCardComponent } from './components/projects/project-card/project-card.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { TechnologyCardsComponent } from './components/experience/technology-cards/technology-cards.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TechnologyCardsComponent } from './components/experience/technology-car
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]

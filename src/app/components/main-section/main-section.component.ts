@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-main-section',
@@ -13,4 +13,14 @@ export class MainSectionComponent implements OnInit {
       'https://drive.google.com/file/d/1ClVKJWZmvXNo3YU1wEU3B2ZB0KzRu86F/view?usp=share_link';
     window.open(url, '_blank');
   }
+
+   @ViewChild("aboutMeSection") aboutMeSectionRef!: ElementRef;
+
+  // ngAfterViewInit() {
+  //   if (this.aboutMeSectionRef) {
+  //     this.aboutMeSectionRef.nativeElement.scrollIntoView({
+  //       behavior: "smooth",
+  //     });
+  //   }
+  // }
 }
