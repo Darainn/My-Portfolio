@@ -36,6 +36,20 @@ export const projectsData = [
     url: "https://apps.apple.com/us/app/homeyyee/id1620523214",
     image: '../../assets/images/layer-2.5052b13f.png'
   },
+  {
+    name: "Fast Learner",
+    description:
+      "FastLearner is more than just a platform – it's a dynamic ecosystem to ignite your passion for learning. We provide interactive courses, expert instructors, and a supportive community, all in pursuit of your educational growth.",
+    url: "https://fastlearner.ai",
+    image: '../../assets/images/FastLearner.svg'
+  },
+  {
+    name: "Heba",
+    description:
+      "Heba is the go-to platform for modern, hassle-free gifting in the Arab world. We've transformed the age-old concept of paper gift cards into a seamless digital experience, making it easier than ever to celebrate your loved ones, no matter where they are.",
+    url: "https://play.google.com/store/apps/details?id=com.heba.app&hl=en&gl=US&pli=1",
+    image: 'https://play-lh.googleusercontent.com/IEfkOCWI9Z6nVOKgcfzBuqzaalph59lQqhksLnrZcvpQCukFaaTvHqOQ2RJQmJqb51w=w240-h480-rw'
+  },
 ];
 
 export const frontEndTechs = [
@@ -96,6 +110,10 @@ export const frontEndTechs = [
     name: "Bootstrap",
     url: "../../assets/images/bootstrap-icon.svg",
   },
+  {
+    name: "Jenkins",
+    url: "../../assets/images/jenkins.svg",
+  },
 ];
 
 export const testingTechs = [
@@ -132,12 +150,12 @@ export const socials = [
   {
     name: "Github",
     url: "../../assets/images/github-icon-1.svg",
-    link : "https://github.com/Darainn"
+    link: "https://github.com/Darainn"
   },
   {
     name: "Stackoverflow",
     url: "../../assets/images/stack-overflow.svg",
-    link : "https://stackoverflow.com/users/13954106/darain-mukarram"
+    link: "https://stackoverflow.com/users/13954106/darain-mukarram"
   },
 
   {
@@ -148,12 +166,12 @@ export const socials = [
   {
     name: "LinkedIn",
     url: "../../assets/images/linkedin-icon-2.svg",
-    link : "https://www.linkedin.com/in/darain-mukarram-719394193/",
+    link: "https://www.linkedin.com/in/darain-mukarram-719394193/",
   },
   {
-    name: "Twitter",
-    url: "../../assets/images/twitter-6.svg",
-    link  : "https://twitter.com/syed_darainn",
+    name: "X",
+    url: "../../assets/images/X.jpg",
+    link: "https://twitter.com/syed_darainn",
   },
 
   // {

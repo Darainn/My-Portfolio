@@ -6,15 +6,15 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./main-section.component.scss'],
 })
 export class MainSectionComponent implements OnInit {
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   viewResume() {
     let url =
-      'https://drive.google.com/file/d/1ClVKJWZmvXNo3YU1wEU3B2ZB0KzRu86F/view?usp=share_link';
+      'https://drive.google.com/file/d/1GE9vUqqjl6C-hnRNEvAM5_w-nErkWVNu/view?usp=sharing';
     window.open(url, '_blank');
   }
 
-   @ViewChild("aboutMeSection") aboutMeSectionRef!: ElementRef;
+  @ViewChild("aboutMeSection") aboutMeSectionRef!: ElementRef;
 
   // ngAfterViewInit() {
   //   if (this.aboutMeSectionRef) {
