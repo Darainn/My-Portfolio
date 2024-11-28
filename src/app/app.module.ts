@@ -13,6 +13,8 @@ import { ProjectCardComponent } from './components/projects/project-card/project
 import { BannerComponent } from './components/banner/banner.component';
 import { TechnologyCardsComponent } from './components/experience/technology-cards/technology-cards.component';
 import { RouterModule } from '@angular/router';
+import { JourneyComponent } from './components/journey/journey.component';
+import { JourneyCardsComponent } from './components/journey/journey-cards/journey-cards.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { RouterModule } from '@angular/router';
     FindMeComponent,
     ProjectCardComponent,
     BannerComponent,
-    TechnologyCardsComponent
+    TechnologyCardsComponent,
+    JourneyComponent,
+    JourneyCardsComponent
   ],
   imports: [
     BrowserModule,
