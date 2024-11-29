@@ -47,6 +47,14 @@
       </li>
       <li>
         <a
+          href="#journey"
+          fragment="experience-section"
+          class="block py-2 font-nunito-medium pl-3 pr-4 text-primaryGray-200 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-gray-400 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+          >Journey</a
+        >
+      </li>
+      <li>
+        <a
           href="#projects"
           fragment="projects-section"
           class="block py-2 font-nunito-medium pl-3 pr-4 text-primaryGray-200 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-gray-400 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
@@ -68,7 +76,7 @@
 <div *ngIf="visible" class="navbar-menu bg-[#111827] relative z-50">
   <div class="navbar-backdrop fixed inset-0 bg-[#111827] opacity-25"></div>
   <nav
-    class="fixed top-0 bg-[#111827] left-0 bottom-0 flex flex-col w-[-webkit-fill-available] py-6 px-6  overflow-y-auto"
+    class="fixed top-0 bg-[#111827] left-0 bottom-0 flex flex-col w-[-webkit-fill-available] py-6 px-6 overflow-y-auto"
   >
     <div class="flex items-center mb-8">
       <button (click)="toggleVisibility()">
@@ -91,21 +99,45 @@
     <div>
       <ul>
         <ul class="list-none justify-center pl-4 flex mb-5"></ul>
-        <li (click)="toggleVisibility()"  class="mt-4 mb-1 cursor-pointer">
-          <a   href="#aboutMe"
-          fragment="about-me-section" class="font-nunito-medium pl-3 pr-4 text-primaryGray-200  hover:bg-gray-100 md:hover:bg-transparent hover:text-bodyColor-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 block p-2 text-xl text-center rounded">About</a>
+        <li (click)="toggleVisibility()" class="mt-4 mb-1 cursor-pointer">
+          <a
+            href="#aboutMe"
+            fragment="about-me-section"
+            class="font-nunito-medium pl-3 pr-4 text-primaryGray-200 hover:bg-gray-100 md:hover:bg-transparent hover:text-bodyColor-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 block p-2 text-xl text-center rounded"
+            >About</a
+          >
         </li>
         <li (click)="toggleVisibility()" class="mt-4 mb-1 cursor-pointer">
-          <a  href="#experience"
-          fragment="experience-section" class="font-nunito-medium pl-3 pr-4 text-primaryGray-200  hover:bg-gray-100 md:hover:bg-transparent hover:text-bodyColor-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 block p-2 text-xl text-center rounded">Experience</a>
+          <a
+            href="#experience"
+            fragment="experience-section"
+            class="font-nunito-medium pl-3 pr-4 text-primaryGray-200 hover:bg-gray-100 md:hover:bg-transparent hover:text-bodyColor-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 block p-2 text-xl text-center rounded"
+            >Experience</a
+          >
         </li>
         <li (click)="toggleVisibility()" class="mt-4 mb-1 cursor-pointer">
-          <a   href="#projects"
-          fragment="projects-section" class="font-nunito-medium pl-3 pr-4 text-primaryGray-200  hover:bg-gray-100 md:hover:bg-transparent hover:text-bodyColor-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 block p-2 text-xl text-center rounded">Projects</a>
+          <a
+            href="#journey"
+            fragment="experience-section"
+            class="font-nunito-medium pl-3 pr-4 text-primaryGray-200 hover:bg-gray-100 md:hover:bg-transparent hover:text-bodyColor-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 block p-2 text-xl text-center rounded"
+            >Journey</a
+          >
         </li>
         <li (click)="toggleVisibility()" class="mt-4 mb-1 cursor-pointer">
-          <a   href="#findMe"
-          fragment="find-me-section" class="font-nunito-medium pl-3 pr-4 text-primaryGray-200  hover:bg-gray-100 md:hover:bg-transparent hover:text-bodyColor-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 block p-2 text-xl text-center rounded">Find Me</a>
+          <a
+            href="#projects"
+            fragment="projects-section"
+            class="font-nunito-medium pl-3 pr-4 text-primaryGray-200 hover:bg-gray-100 md:hover:bg-transparent hover:text-bodyColor-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 block p-2 text-xl text-center rounded"
+            >Projects</a
+          >
+        </li>
+        <li (click)="toggleVisibility()" class="mt-4 mb-1 cursor-pointer">
+          <a
+            href="#findMe"
+            fragment="find-me-section"
+            class="font-nunito-medium pl-3 pr-4 text-primaryGray-200 hover:bg-gray-100 md:hover:bg-transparent hover:text-bodyColor-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 block p-2 text-xl text-center rounded"
+            >Find Me</a
+          >
         </li>
       </ul>
     </div>

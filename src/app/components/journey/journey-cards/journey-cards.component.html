@@ -8,13 +8,24 @@
     </a> -->
     <div class="flip-card-inner">
       <div
-        class="cursor-pointer flip-card-front justify-center flex items-center bg-[#1F2937] border-b border-gray-800 rounded-lg shadow"
+        class="cursor-pointer flip-card-front justify-center flex flex-col items-center bg-[#1F2937] border-b border-gray-800 rounded-lg shadow"
       >
         <img
           src="{{ journey.image }}"
           alt="Avatar"
           class="w-[60%] object-contain"
         />
+
+        <p
+          class="mb-3 mt-6 text-base font-nunito-bold md:text-lg text-white dark:text-gray-400"
+        >
+          {{ journey?.designation }}
+        </p>
+        <p
+          class="mb-3 mt-3 text-sm md:text-base text-white font-nunito-regular dark:text-gray-400"
+        >
+          {{ journey?.tenure }}
+        </p>
       </div>
       <div class="flip-card-back cursor-pointer p-5">
         <a href="#">

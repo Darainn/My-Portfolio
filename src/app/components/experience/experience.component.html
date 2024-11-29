@@ -1,4 +1,4 @@
-<section id="experience" #experienceSection class=" mt-5">
+<section id="experience" #experienceSection class="mt-5">
   <div class="container mx-auto px-5 md:flex-row items-center">
     <div class="lg:flex-grow md:w-1/2 flex flex-col items-start text-left">
       <h1 class="font-manrope-bold sm:text-4xl text-3xl mb-7 text-white">
@@ -6,32 +6,83 @@
       </h1>
     </div>
     <div class="">
-      <p class="mb-8 text-primaryGray-200 font-nunito-regular leading-relaxed">
+      <!-- <p class="mb-8 text-primaryGray-200 font-nunito-regular leading-relaxed">
         As a <b>Software developer</b> with 3+ years of experience in front-end
         development, I am passionate about building innovative and user-friendly
         applications that solve real-world problems. With a strong background in
         Javascript using Angular, React JS, React Native, and Next and more, I
         have developed and worked on multiple applications that have been used
         by thousands of users worldwide. 🚀🚀
-      </p>
+      </p> -->
 
-      <b class="text-primaryGray-200 font-nunito-bold text-lg leading-relaxed">My overall Front-end development skills are</b>
+      <b class="text-primaryGray-200 font-nunito-bold text-lg leading-relaxed"
+        >My overall Front-end development skills are</b
+      >
+
+      <!-- <p class="mb-8 text-primaryGray-200 font-nunito-regular leading-relaxed">
+        I specialize in front-end development using modern frameworks and
+        libraries such as Angular, React JS, React Native, and Flutter to create
+        responsive, dynamic, and user-friendly interfaces. I incorporate state
+        management solutions like Ngrx and Redux to ensure smooth and
+        predictable application behavior. For styling, I rely on powerful tools
+        like Tailwind CSS, Material UI, and Bootstrap, alongside core
+        technologies such as HTML, CSS, SASS, JavaScript, and TypeScript. These
+        tools allow me to deliver visually stunning and highly performant
+        applications tailored to client needs.🌟
+      </p> -->
 
       <div class="m-6">
         <app-technology-cards [techArray]="frontEnd"></app-technology-cards>
       </div>
 
-      <b class="text-primaryGray-200 font-nunito-bold text-lg leading-relaxed">Automation skills </b>
+      <b class="text-primaryGray-200 font-nunito-bold text-lg leading-relaxed"
+        >Unit Testing skills
+      </b>
+
+      <!-- <p class="mb-8 text-primaryGray-200 font-nunito-regular leading-relaxed">
+        To ensure code reliability and maintainability, I implement unit testing
+        with tools like Jasmine, Karma, and Jest. These frameworks enable me to
+        test individual components effectively, ensuring that each piece
+        functions as intended while maintaining the integrity of the entire
+        application. My approach to testing guarantees high-quality software
+        delivery. ✔️
+      </p> -->
+
+      <div class="m-6">
+        <app-technology-cards
+          [techArray]="unitTestingTech"
+        ></app-technology-cards>
+      </div>
+      <b class="text-primaryGray-200 font-nunito-bold text-lg leading-relaxed"
+        >Automation skills
+      </b>
+
+      <!-- <p class="mb-8 text-primaryGray-200 font-nunito-regular leading-relaxed">
+        Quality is at the heart of my development process. I use testing tools
+        like Appium for mobile app automation, Flutter Driver for testing
+        Flutter-based apps, and Mocha for robust JavaScript testing. These tools
+        help me validate functionality, improve performance, and ensure that my
+        projects are free from bugs, providing a reliable experience for
+        users.🛠️
+      </p> -->
 
       <div class="m-6">
         <app-technology-cards [techArray]="testingTech"></app-technology-cards>
       </div>
 
-      <b class="text-primaryGray-200 font-nunito-bold text-lg leading-relaxed">Other skills </b>
+      <b class="text-primaryGray-200 font-nunito-bold text-lg leading-relaxed"
+        >Other skills
+      </b>
+
+      <!-- <p class="mb-8 text-primaryGray-200 font-nunito-regular leading-relaxed">
+        In addition to JavaScript, I have expertise in multiple programming
+        languages that help me adapt to diverse project requirements.This
+        diverse skill set allows me to tackle complex challenges and deliver
+        innovative solutions.🐍
+      </p> -->
       <div class="m-6">
         <app-technology-cards [techArray]="other"></app-technology-cards>
       </div>
     </div>
   </div>
 </section>
-

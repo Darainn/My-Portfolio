@@ -16,6 +16,14 @@ export const projectsData = [
   // },
 
   {
+    name: 'Fast Learner',
+    description:
+      "FastLearner is more than just a platform – it's a dynamic ecosystem to ignite your passion for learning. We provide interactive courses, expert instructors, and a supportive community, all in pursuit of your educational growth.",
+    url: 'https://fastlearner.ai',
+    image: '../../assets/images/fastlearner_logo.jpg',
+  },
+
+  {
     name: 'Admin Portals',
     description:
       "Estenarh specializes in a wide range of fields: stress, anxiety, tension, fears, depression, children's problems, adolescent problems, obsessive-compulsive disorder, learning delay, gender dysphoria, sleep disturbance, mood disorder, family and marriage issues, divorce, post-separation crises and others",
@@ -36,13 +44,7 @@ export const projectsData = [
     url: 'https://apps.apple.com/us/app/homeyyee/id1620523214',
     image: '../../assets/images/layer-2.5052b13f.png',
   },
-  {
-    name: 'Fast Learner',
-    description:
-      "FastLearner is more than just a platform – it's a dynamic ecosystem to ignite your passion for learning. We provide interactive courses, expert instructors, and a supportive community, all in pursuit of your educational growth.",
-    url: 'https://fastlearner.ai',
-    image: '../../assets/images/FastLearner.svg',
-  },
+
   {
     name: 'Heba',
     description:
@@ -55,6 +57,7 @@ export const projectsData = [
 export const journeyData = [
   {
     name: 'VinnCorp',
+    designation: 'Software Enginner I',
     description:
       'VinnCorp is a platform for connecting innovative enterprises and entrepreneurs with top remote talent. We have clients spanning from aspiring entrepreneurs to multi-billion dollar companies. We have 70+ satisfied clients worldwide partnering with us for excellent execution.',
     url: 'https://vinncorp.com/',
@@ -63,6 +66,7 @@ export const journeyData = [
   },
   {
     name: 'IOMechs',
+    designation: 'Software Enginner',
     description:
       'IOMechs, provide innovative IT and business solutions, enhancing security, driving efficiency, and fostering growth tailored to your unique needs. Our team of experts is dedicated to delivering high-quality services that drive efficiency, enhance security, and foster growth.',
     url: 'https://www.iomechs.com/',
@@ -148,6 +152,21 @@ export const testingTechs = [
   {
     name: 'Mocha',
     url: '../../assets/images/mocha.svg',
+  },
+];
+export const unitTestingTechs = [
+  {
+    name: 'Jasmine',
+    url: '../../assets/images/jasmine.png',
+  },
+  {
+    name: 'Karma',
+    url: '../../assets/images/karma.png',
+  },
+
+  {
+    name: 'Jest',
+    url: '../../assets/images/jest.png',
   },
 ];
 export const otherLang = [

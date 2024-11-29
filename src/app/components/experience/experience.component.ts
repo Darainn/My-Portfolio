@@ -1,21 +1,21 @@
-import { Component, ElementRef, ViewChild } from "@angular/core";
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import {
   frontEndTechs,
   otherLang,
   testingTechs,
-} from "src/core/data/projects-data";
+  unitTestingTechs,
+} from 'src/core/data/projects-data';
 
 @Component({
-  selector: "app-experience",
-  templateUrl: "./experience.component.html",
-  styleUrls: ["./experience.component.scss"],
+  selector: 'app-experience',
+  templateUrl: './experience.component.html',
+  styleUrls: ['./experience.component.scss'],
 })
 export class ExperienceComponent {
   frontEnd = frontEndTechs;
   testingTech = testingTechs;
+  unitTestingTech = unitTestingTechs;
   other = otherLang;
 
-  @ViewChild("experienceSection") experienceSectionRef!: ElementRef;
-
-
+  @ViewChild('experienceSection') experienceSectionRef!: ElementRef;
 }
