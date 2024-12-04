@@ -3,9 +3,10 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
+  styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent {
+  date = new Date().getFullYear();
 
   visitFacebook() {
     let url = 'https://www.facebook.com/mohammad.darain';
@@ -19,5 +20,4 @@ export class FooterComponent {
     let url = 'https://twitter.com/syed_darainn';
     window.open(url, '_blank');
   }
-
 }
