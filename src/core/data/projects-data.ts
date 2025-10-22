@@ -1,4 +1,12 @@
 export const projectsData = [
+
+  {
+    name: "Gen2 Web",
+    description:
+      "Gen2, which includes multiple banking modules such as account management, fund transfers, loan processing, and user onboarding. The project focused on creating a secure, scalable, and responsive platform for both retail and corporate users. I made it an micro-frontend architecture, developing key UI components, optimizing performance, and ensuring seamless integration with backend services.",
+    url: "https://gen2-uat.habibbank.com/",
+    image: '../../assets/images/hbz.png'
+  },
   {
     name: 'ICPlan',
     description:
@@ -7,13 +15,7 @@ export const projectsData = [
     image: '../../assets/images/Logo-Blue-1-1.webp',
   },
 
-  // {
-  //   name: "Homeyee Web",
-  //   description:
-  //     "Whatever your budget, Homyee application makes it easy for you to rent real estate units at the best prices. We put in your hands many and varied choices that suit your needs.",
-  //   url: "https://homeyyee.com/",
-  //   image: '../../assets/images/layer-2.5052b13f.png'
-  // },
+
 
   {
     name: 'Fast Learner',
@@ -58,7 +60,7 @@ export const journeyData = [
 
   {
     name: 'HBZ Services',
-    designation: 'Software Enginner Manager',
+    designation: 'Software Engineer Manager',
     description:
       'HBZ Software Solutions is a technology company that specializes in providing software development and consulting services to businesses of all sizes. Our team of skilled professionals works closely with clients to understand their unique needs and deliver customized solutions that drive growth and',
     url: 'https://habibbank.com/',
@@ -67,7 +69,7 @@ export const journeyData = [
   },
   {
     name: 'VinnCorp',
-    designation: 'Software Enginner I',
+    designation: 'Software Engineer I',
     description:
       'VinnCorp is a platform for connecting innovative enterprises and entrepreneurs with top remote talent. We have clients spanning from aspiring entrepreneurs to multi-billion dollar companies. We have 70+ satisfied clients worldwide partnering with us for excellent execution.',
     url: 'https://vinncorp.com/',
@@ -76,7 +78,7 @@ export const journeyData = [
   },
   {
     name: 'IOMechs',
-    designation: 'Software Enginner',
+    designation: 'Software Engineer',
     description:
       'IOMechs, provide innovative IT and business solutions, enhancing security, driving efficiency, and fostering growth tailored to your unique needs. Our team of experts is dedicated to delivering high-quality services that drive efficiency, enhance security, and foster growth.',
     url: 'https://www.iomechs.com/',
