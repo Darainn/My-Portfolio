@@ -1,0 +1,198 @@
+.projects-section {
+  background: linear-gradient(135deg, #020617 0%, #0f172a 50%, #1e293b 100%);
+  position: relative;
+
+  // Background Elements
+  .projects-bg-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .code-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(6, 182, 212, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.05) 0%, transparent 50%);
+    background-size: 300px 300px;
+    animation: codeShift 25s linear infinite;
+  }
+
+  .floating-shape {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgba(6, 182, 212, 0.1), rgba(59, 130, 246, 0.1));
+    animation: floatShape 8s ease-in-out infinite;
+
+    &.shape-1 {
+      width: 250px;
+      height: 250px;
+      top: 10%;
+      right: 20%;
+      animation-delay: 0s;
+    }
+
+    &.shape-2 {
+      width: 180px;
+      height: 180px;
+      bottom: 20%;
+      left: 15%;
+      animation-delay: 3s;
+    }
+
+    &.shape-3 {
+      width: 120px;
+      height: 120px;
+      top: 50%;
+      right: 10%;
+      animation-delay: 6s;
+    }
+  }
+}
+
+// Section Header
+.section-header {
+  .section-divider {
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #06b6d4, #3b82f6);
+    border-radius: 2px;
+  }
+}
+
+// Project Intro
+.project-intro {
+  p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+}
+
+// Project Stats
+.project-stats {
+  .stats-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .stats-grid {
+    gap: 1.5rem;
+  }
+
+  .stat-item {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #06b6d4, #3b82f6);
+    }
+
+    &:hover {
+      transform: translateY(-8px);
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(6, 182, 212, 0.3);
+      box-shadow: 0 20px 40px rgba(6, 182, 212, 0.2);
+    }
+
+    .stat-icon {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.2), rgba(59, 130, 246, 0.2));
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      color: #06b6d4;
+      transition: all 0.3s ease;
+    }
+
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: white;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      color: #94a3b8;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    &:hover .stat-icon {
+      transform: scale(1.1);
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.3), rgba(59, 130, 246, 0.3));
+    }
+  }
+}
+
+// Animations
+@keyframes codeShift {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+
+@keyframes floatShape {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-30px) rotate(180deg); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .projects-section {
+    .project-stats {
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+
+      .stat-item {
+        padding: 1rem;
+
+        .stat-number {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

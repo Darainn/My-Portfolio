@@ -55,6 +55,16 @@ export const projectsData = [
   },
 ];
 export const journeyData = [
+
+  {
+    name: 'HBZ Services',
+    designation: 'Software Enginner Manager',
+    description:
+      'HBZ Software Solutions is a technology company that specializes in providing software development and consulting services to businesses of all sizes. Our team of skilled professionals works closely with clients to understand their unique needs and deliver customized solutions that drive growth and',
+    url: 'https://habibbank.com/',
+    image: '../../assets/images/hbz.png',
+    tenure: 'Dec 2024 - Present',
+  },
   {
     name: 'VinnCorp',
     designation: 'Software Enginner I',
@@ -62,7 +72,7 @@ export const journeyData = [
       'VinnCorp is a platform for connecting innovative enterprises and entrepreneurs with top remote talent. We have clients spanning from aspiring entrepreneurs to multi-billion dollar companies. We have 70+ satisfied clients worldwide partnering with us for excellent execution.',
     url: 'https://vinncorp.com/',
     image: '../../assets/images/vinncorp.png',
-    tenure: 'Feb 2024 - Present',
+    tenure: 'Feb 2024 - Dec 2024',
   },
   {
     name: 'IOMechs',

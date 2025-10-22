@@ -1,145 +1,92 @@
-<nav class="bg-gray-900 fixed p-6 w-full z-20 top-0 border-b border-gray-800">
-  <div class="flex justify-end">
-    <button
-      data-collapse-toggle="navbar-default"
-      (click)="toggleVisibility()"
-      type="button"
-      class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-      aria-controls="navbar-default"
-      aria-expanded="false"
-    >
-      <span class="sr-only">Open main menu</span>
-      <svg
-        class="w-6 h-6"
-        aria-hidden="true"
-        fill="currentColor"
-        viewBox="0 0 20 20"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-          clip-rule="evenodd"
-        ></path>
-      </svg>
-    </button>
-  </div>
-  <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-    <ul
-      class="flex justify-center flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
-    >
-      <li>
-        <a
-          href="#aboutMe"
-          fragment="about-me-section"
-          class="block py-2 font-nunito-medium pl-3 pr-4 text-primaryGray-200 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-gray-400 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-          aria-current="page"
-          >About Me</a
-        >
-      </li>
-      <li>
-        <a
-          href="#experience"
-          fragment="experience-section"
-          class="block py-2 font-nunito-medium pl-3 pr-4 text-primaryGray-200 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-gray-400 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-          >Experience</a
-        >
-      </li>
-      <li>
-        <a
-          href="#journey"
-          fragment="experience-section"
-          class="block py-2 font-nunito-medium pl-3 pr-4 text-primaryGray-200 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-gray-400 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-          >Journey</a
-        >
-      </li>
-      <li>
-        <a
-          href="#projects"
-          fragment="projects-section"
-          class="block py-2 font-nunito-medium pl-3 pr-4 text-primaryGray-200 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-gray-400 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-          >Projects</a
-        >
-      </li>
-      <li>
-        <a
-          href="#findMe"
-          fragment="find-me-section"
-          class="block py-2 font-nunito-medium pl-3 pr-4 text-primaryGray-200 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-gray-400 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-          >Find Me</a
-        >
-      </li>
-    </ul>
-  </div>
-</nav>
+<nav class="navbar-container fixed w-full z-50 top-0">
+  <div class="navbar-backdrop"></div>
+  <div class="navbar-content">
+    <div class="container mx-auto px-5">
+      <div class="navbar-inner">
+        <!-- Logo/Brand -->
+        <div class="navbar-brand">
+          <a href="#" class="brand-link">
+            <span class="brand-text">Darain</span>
+            <span class="brand-accent">.</span>
+          </a>
+        </div>
 
-<div *ngIf="visible" class="navbar-menu bg-[#111827] relative z-50">
-  <div class="navbar-backdrop fixed inset-0 bg-[#111827] opacity-25"></div>
-  <nav
-    class="fixed top-0 bg-[#111827] left-0 bottom-0 flex flex-col w-[-webkit-fill-available] py-6 px-6 overflow-y-auto"
-  >
-    <div class="flex items-center mb-8">
-      <button (click)="toggleVisibility()">
-        <svg
-          class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
+        <!-- Desktop Navigation -->
+        <div class="navbar-menu hidden md:flex">
+          <ul class="nav-links">
+            <li><a href="#aboutMe" class="nav-link">About Me</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#journey" class="nav-link">Journey</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#findMe" class="nav-link">Find Me</a></li>
+          </ul>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          (click)="toggleVisibility()"
+          class="mobile-menu-btn md:hidden"
+          type="button"
+          aria-label="Toggle navigation"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M6 18L18 6M6 6l12 12"
-          ></path>
-        </svg>
-      </button>
+          <div class="hamburger" [class.active]="visible">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </div>
     </div>
-    <div>
-      <ul>
-        <ul class="list-none justify-center pl-4 flex mb-5"></ul>
-        <li (click)="toggleVisibility()" class="mt-4 mb-1 cursor-pointer">
-          <a
-            href="#aboutMe"
-            fragment="about-me-section"
-            class="font-nunito-medium pl-3 pr-4 text-primaryGray-200 hover:bg-gray-100 md:hover:bg-transparent hover:text-bodyColor-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 block p-2 text-xl text-center rounded"
-            >About</a
-          >
+  </div>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav" [class.active]="visible">
+    <div class="mobile-nav-backdrop" (click)="toggleVisibility()"></div>
+    <nav class="mobile-nav-content">
+      <div class="mobile-nav-header">
+        <div class="mobile-brand">
+          <span class="brand-text">Darain</span>
+          <span class="brand-accent">.</span>
+        </div>
+        <button (click)="toggleVisibility()" class="close-btn">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="mobile-nav-links">
+        <li (click)="toggleVisibility()">
+          <a href="#aboutMe" class="mobile-nav-link">
+            <span class="link-icon">👨‍💻</span>
+            <span>About Me</span>
+          </a>
         </li>
-        <li (click)="toggleVisibility()" class="mt-4 mb-1 cursor-pointer">
-          <a
-            href="#experience"
-            fragment="experience-section"
-            class="font-nunito-medium pl-3 pr-4 text-primaryGray-200 hover:bg-gray-100 md:hover:bg-transparent hover:text-bodyColor-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 block p-2 text-xl text-center rounded"
-            >Experience</a
-          >
+        <li (click)="toggleVisibility()">
+          <a href="#experience" class="mobile-nav-link">
+            <span class="link-icon">🚀</span>
+            <span>Experience</span>
+          </a>
         </li>
-        <li (click)="toggleVisibility()" class="mt-4 mb-1 cursor-pointer">
-          <a
-            href="#journey"
-            fragment="experience-section"
-            class="font-nunito-medium pl-3 pr-4 text-primaryGray-200 hover:bg-gray-100 md:hover:bg-transparent hover:text-bodyColor-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 block p-2 text-xl text-center rounded"
-            >Journey</a
-          >
+        <li (click)="toggleVisibility()">
+          <a href="#journey" class="mobile-nav-link">
+            <span class="link-icon">🛤️</span>
+            <span>Journey</span>
+          </a>
         </li>
-        <li (click)="toggleVisibility()" class="mt-4 mb-1 cursor-pointer">
-          <a
-            href="#projects"
-            fragment="projects-section"
-            class="font-nunito-medium pl-3 pr-4 text-primaryGray-200 hover:bg-gray-100 md:hover:bg-transparent hover:text-bodyColor-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 block p-2 text-xl text-center rounded"
-            >Projects</a
-          >
+        <li (click)="toggleVisibility()">
+          <a href="#projects" class="mobile-nav-link">
+            <span class="link-icon">💼</span>
+            <span>Projects</span>
+          </a>
         </li>
-        <li (click)="toggleVisibility()" class="mt-4 mb-1 cursor-pointer">
-          <a
-            href="#findMe"
-            fragment="find-me-section"
-            class="font-nunito-medium pl-3 pr-4 text-primaryGray-200 hover:bg-gray-100 md:hover:bg-transparent hover:text-bodyColor-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 block p-2 text-xl text-center rounded"
-            >Find Me</a
-          >
+        <li (click)="toggleVisibility()">
+          <a href="#findMe" class="mobile-nav-link">
+            <span class="link-icon">📞</span>
+            <span>Find Me</span>
+          </a>
         </li>
       </ul>
-    </div>
-  </nav>
-</div>
+    </nav>
+  </div>
+</nav>

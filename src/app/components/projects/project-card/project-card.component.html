@@ -1,48 +1,60 @@
-<section class="flex justify-center flex-wrap">
-  <div
-    *ngFor="let project of projects"
-    class="flip-card  flex flex-col justify-between  mt-3 mr-3 mb-3 bg-[#1F2937] border-b border-gray-800 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-  >
-    <!-- <a href="#">
-      <img class="rounded-t-lg" src="https://picsum.photos" alt="" />
-  </a> -->
-  <div class="flip-card-inner">
+<section class="project-cards-container">
+  <div class="cards-grid">
     <div
-    class="cursor-pointer flip-card-front justify-center flex items-center bg-[#1F2937] border-b border-gray-800 rounded-lg shadow"
-  >
-    <img
-      src="{{project.image}}"
-      alt="Avatar"
-      class="w-[60%] object-contain"
-    />
-  </div>
-    <div class=" flip-card-back cursor-pointer p-5">
-
-      <a href="#">
-        <h5
-          class="mb-2 text-base md:text-2xl font-manrope-bold tracking-tight text-white dark:text-white"
-        >
-          {{ project.name }}
-        </h5>
-      </a>
-      <p
-        class="mb-3 text-sm md:text-base text-white font-nunito-regular dark:text-gray-400"
-      >
-        {{ project?.description }}
-      </p>
-
-    <a
-      href="{{ project.url }}" target="_blank"
-      class="inline-flex justify-center items-center m-2 text-sm  text-center text-white"
+      *ngFor="let project of projects; let i = index"
+      class="project-card animate-fade-in-up"
+      [style.animation-delay.s]="i * 0.15"
     >
-      <button
-      class="inline-flex hover:text-white hover:bg-bodyColor-primary border-b border-gray-800  shadow py-2 px-6 focus:outline-none bg-white text-bodyColor-primary rounded text-lg"
-      >
-        Visit Site
-      </button>
-    </a>
-  </div>
-  </div>
-</div>
-</section>
+      <div class="card-inner">
+        <!-- Front Side -->
+        <div class="card-front">
+          <div class="project-image">
+            <img
+              [src]="project.image"
+              [alt]="project.name + ' preview'"
+              class="project-logo"
+            />
+          </div>
 
+          <div class="project-overlay">
+            <h3 class="project-title">{{ project.name }}</h3>
+            <div class="hover-indicator">
+              <span>View Details</span>
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back Side -->
+        <div class="card-back">
+          <div class="back-content">
+            <div class="project-header">
+              <h4 class="project-name">{{ project.name }}</h4>
+              <div class="project-type">Web Application</div>
+            </div>
+
+            <div class="project-description">
+              <p>{{ project.description }}</p>
+            </div>
+
+            <div class="project-actions">
+              <a
+                [href]="project.url"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="visit-btn group"
+              >
+                <span>Visit Project</span>
+                <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
